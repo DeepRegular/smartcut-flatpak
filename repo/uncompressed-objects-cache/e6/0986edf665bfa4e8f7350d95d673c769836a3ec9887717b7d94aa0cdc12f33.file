@@ -1,0 +1,22 @@
+[Application]
+name=dev.smartcut.app
+runtime=org.gnome.Platform/x86_64/50
+sdk=org.gnome.Sdk/x86_64/50
+command=smartcut
+
+[Context]
+shared=ipc;
+sockets=x11;wayland;pulseaudio;fallback-x11;
+devices=all;
+filesystems=host;
+
+[Session Bus Policy]
+org.freedesktop.Notifications=talk
+
+[Extension dev.smartcut.app.Debug]
+directory=lib/debug
+autodelete=true
+no-autodownload=true
+
+[Build]
+built-extensions=dev.smartcut.app.Debug;

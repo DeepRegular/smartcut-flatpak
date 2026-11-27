@@ -1,0 +1,5 @@
+[Runtime]
+name=dev.smartcut.app.Debug
+
+[ExtensionOf]
+ref=app/dev.smartcut.app/x86_64/master
